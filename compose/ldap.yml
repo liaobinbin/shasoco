@@ -37,7 +37,7 @@ directory:
      - ldapdata
 
 ldap:
-    image: shasoco/openldap:2.4.40
+    image: liaobinbin/openldap:2.4.40
     hostname: ldap.<%=domain%>
     restart: always
     volumes_from:
