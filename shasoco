@@ -33,7 +33,7 @@ if [ _$1 = _version ]; then
         echo "Using shasoco version '$SHASOCO_VERSION'"
     else
         SHASOCO_VERSION=$2
-        docker pull shasoco/shasoco:$SHASOCO_VERSION
+        docker pull liaobinbin/shasoco:$SHASOCO_VERSION
         #docker run --privileged -v $(which docker):/bin/docker -v /var/run/docker.sock:/var/run/docker.sock -v $(readlink -f /var/lib/docker):/var/lib/docker --rm -w /shasoco/compose shasoco/shasoco:$SHASOCO_VERSION docker-compose pull
         echo "SHASOCO_VERSION=$SHASOCO_VERSION" >> ~/.shasoco/version
         echo "Enabled shasoco version '$2'"
