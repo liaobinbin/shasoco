@@ -65,6 +65,6 @@ docker run \
     --rm \
     -v /var/run/docker.sock:/var/run/docker.sock \
     --volumes-from shasocodata \
-    shasoco/shasoco:$SHASOCO_VERSION \
+    liaobinbin/shasoco:$SHASOCO_VERSION \
     $COMMAND "$@"
 
