@@ -37,6 +37,7 @@ redmine:
      #- IMAP_INTERVAL=30
     volumes_from:
      - redminedata
+     - gitlabdata
 
 redminepostgresql:
     image: sameersbn/postgresql:9.4-10
@@ -53,6 +54,8 @@ redminedata:
     command: echo ready
     volumes:
      - /home/redmine/data
+     - /home/redmine/redmine/plugins
+     - /home/redmine/redmine/public/themes
 
 redminepostgresqldata:
     image: debian:jessie
