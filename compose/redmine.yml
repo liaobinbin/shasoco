@@ -17,7 +17,7 @@ redmine:
      - "VIRTUAL_HOST=http://redmine.<%=httpHost%>,https://redmine.<%=httpsHost%>"
      - SSL_CERT=<%=sslcert%>
      - FORCE_SSL=YES
-     #- TZ=Europe/Paris
+     - TZ=<%=timezone%>
      - REDMINE_PORT=<%=httpsPort%>
      - REDMINE_HTTPS=true
      - SMTP_ENABLED=true

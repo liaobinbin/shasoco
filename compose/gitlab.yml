@@ -25,8 +25,8 @@ gitlab:
 
      # gitlab config
      - DEBUG=false
-     #- TZ=Europe/Paris
-     #- GITLAB_TIMEZONE=UTC
+     - TZ=<%=timezone%>
+     - GITLAB_TIMEZONE=<%=timetype%>
 
      - GITLAB_HTTPS=true
      - SSL_SELF_SIGNED=<%=(sslcertselfsigned?'true':'false')%>
