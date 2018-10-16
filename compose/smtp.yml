@@ -12,5 +12,5 @@ smtpdata:
     image: debian:jessie
     command: echo ready
     volumes:
-     - /etc/postfix/dkim
+     - /etc/postfix
      - /var/mail
